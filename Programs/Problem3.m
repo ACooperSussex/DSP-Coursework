@@ -1,8 +1,12 @@
-%Problem 3
-% Write a program to linearly correlate two time sequences using the DFT.
-% Perform the circular computation and then repeat with correct zero
-% supplementation. Comment on the differences between the output sequences
-% obtained.
+% Problem # 3 Soln.:
+%-----------Comparison of Correlation Methods-
+%-----------
+%-----------Candidate No. 137377 ---------------
+%
+% Graph 1 shows the input functions, Graph 2 shows the linear correlation, Graph 3 shows the circular correlation, Graph 4 shows the summed version of Graph 3 to show that it is the same as Graph 2.
+% Ultimately, the different methods produce the same output in Graphs 2 and
+% 4. However, the zero-padding circular method produces an output that is
+% periodic and must be summed to produce the final result. 
 
 clear all; close all;
 

@@ -1,5 +1,8 @@
-%Problem 1a - Generate the following discrete sequence:
-% delta(n-3) + delta(n+4)
+% Problem # 1a Soln.:
+%-----------Delta Function Plotting-------------
+%-----------
+%-----------Candidate No. 137377 ---------------
+
 x=-5:5;
 m = zeros(1,size(x,2));
 % Delta function at x= -4

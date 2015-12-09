@@ -1,4 +1,7 @@
-%Problem 1b (i and ii)
+% Problem # 1b (i & ii) Soln.:
+%-----------Sawtooth Function Plotting-------------
+%-----------
+%-----------Candidate No. 137377 ---------------
 %Generate a sawtooth waveform with a chosen duty cycle:
 clear all; close all;
 

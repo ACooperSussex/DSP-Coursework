@@ -1,4 +1,7 @@
-%Problem 2(i)
+% Problem # 2(i) Soln.:
+%-----------Autocorrelation-------------
+%-----------
+%-----------Candidate No. 137377 ---------------
 %Auto-correlate a sequence with itself
 clear all; close all;
     
