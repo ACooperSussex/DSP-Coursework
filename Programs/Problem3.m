@@ -13,9 +13,9 @@ clear all; close all;
 N = 200;
 % sin-shaped signal -- slowly varying
 x(1:N) = sin((1:N)/20);
-x_f = fft(fftshift(x));
+x_f = fft((x));
 y(1:N) = sin(((1:N)+20) / 20);
-y_f = fft(fftshift(y));
+y_f = fft((y));
 
 % Correlation without Padding
 % Do the multiplication in frequency space
@@ -27,11 +27,11 @@ psi_1 = (ifft(psi_f))/N;
 pad_size = size(x,2) + size(y,2) - 1;
 x_padded = zeros(1,pad_size); x_padded(size(x,2):end) = x(1:end); 
 y_padded = zeros(1,pad_size); y_padded(1:size(y,2)) = y(1:end);
-x_padded_f = fft(fftshift(x_padded));
-y_padded_f = fft(fftshift(y_padded));
+x_padded_f = fft((x_padded));
+y_padded_f = fft((y_padded));
 
 y_save = x_padded_f .* conj(y_padded_f);
-y_save = ifftshift(ifft(y_save));
+y_save = (ifft(y_save));
 
 psi_2 = y_save / N;
 psi_2_sum = (y_save(1:N) + y_save(N:end)) / N;

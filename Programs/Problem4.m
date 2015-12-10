@@ -39,7 +39,7 @@ G = s ./ (s + (-1 ^ filter_order) * (w_ac)^filter_order);
 
 % Plot up until operating range of filter at z=-1
 h = figure;
-plot(w,abs(G).^2);
+plot(w./(2*pi),abs(G).^2);
 xlabel('Frequency');
 ylabel('|G(f)|^2');
 title('Frequency Response of Filter')
